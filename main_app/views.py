@@ -14,6 +14,9 @@ def about(request):
 def trips_index(request):
   return render(request, 'trips/index.html', { 'trips': trips })
 
+def home(request):
+  return render(request, 'home.html')
+
 class Trip:  # Note that parens are optional if not inheriting from another class
   def __init__(self, name, distance, description, topspeed):
     self.name = name
