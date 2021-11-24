@@ -22,7 +22,7 @@ class Trip:  # Note that parens are optional if not inheriting from another clas
     self.topspeed = topspeed
 
 trips = [
-  Trip('Bushwick Cruise', '84km', 'Late night, super cold. The bridges looked beautiful though.', '53kph' ),
-  Trip('Jersey Motorsports', '213km', 'Jersey was a blast, tires were cold at first but got em to temps and the Striple was sticking like glue in the corners.', '202kph'),
-  Trip('Long Island Woods', '55km', 'Trails were nice and clear, no big obstacles, got to feel like a rally driver for the afternoon.', '37kph'),
+  Trip('Bushwick Cruise', 84, 'Late night, super cold. The bridges looked beautiful though.', 53 ),
+  Trip('Jersey Motorsports', 213, 'Jersey was a blast, tires were cold at first but got em to temps and the Striple was sticking like glue in the corners.', 202),
+  Trip('Long Island Woods', 55, 'Trails were nice and clear, no big obstacles, got to feel like a rally driver for the afternoon.', 37),
 ]

@@ -20,12 +20,11 @@
       <div class="card-content">
         <div class="card-img-container">
           <img 
-            src="{% static 'images/sk8r-boi-trip.svg' %}" 
-            alt="A skater boy trip"
+            src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon"
           >
         </div>
         <h2 class="card-title">{{ trip.name }}</h2>
-        {% if trip.age > 0 %}
+        {% if trip.distance > 0 %}
           <p>A {{ trip.age }} year old {{ trip.breed }}</p>
         {% else %}
           <p>A {{ trip.breed }} kitten.</p>
