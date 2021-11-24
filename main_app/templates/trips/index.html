@@ -8,7 +8,7 @@
 {% block content %}
 
 <section class="page-header">
-  <h1>PAST TRIPS</h1>
+  <h1>PAST TRIPS</h1> 
   <img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
   <img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" /> 
   <img src="{% static 'images/street.png' alt="Street Riding Icon" />
@@ -19,9 +19,7 @@
     <div class="card">
       <div class="card-content">
         <div class="card-img-container">
-          {% comment %} <img 
-            src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon"
-          > {% endcomment %}
+        {% comment %} for each statement for choices {% endcomment %}
         </div>
         <h2 class="card-title">{{ trip.name }}</h2>
         {% if trip.distance > 0 %}
