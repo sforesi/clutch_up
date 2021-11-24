@@ -258,7 +258,7 @@ nav li {
 
     nav,
     .header-logo-container {
-      background: rgba(104, 197, 248, .6);
+      background: rgba(178, 210, 226, 0.6);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
