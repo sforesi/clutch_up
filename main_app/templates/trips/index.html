@@ -9,9 +9,9 @@
 
 <section class="page-header">
   <h1>trip List</h1>
-  <img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" />
+  {% comment %} <img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" />
   <img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
-  <img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
+  <img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" /> {% endcomment %}
 </section>
 
 <section class="card-container">
@@ -19,17 +19,16 @@
     <div class="card">
       <div class="card-content">
         <div class="card-img-container">
-          <img 
+          {% comment %} <img 
             src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon"
-          >
+          > {% endcomment %}
         </div>
         <h2 class="card-title">{{ trip.name }}</h2>
         {% if trip.distance > 0 %}
-          <p>A {{ trip.age }} year old {{ trip.breed }}</p>
-        {% else %}
-          <p>A {{ trip.breed }} kitten.</p>
+          <p>TRIP DISTANCE: {{ trip.distance }} km  {{ trip.breed }}</p>
+          <p> {{ trip.description }} </p>
         {% endif %}
-        <p><small>{{ trip.description }}</small></p>
+        <p><small>TOP SPEED:{{ trip.topspeed }} kmh</small></p>
       </div>
     </div>
   {% endfor %}
