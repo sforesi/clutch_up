@@ -10,6 +10,7 @@
     href=""
   >
   <title>Clutch Up</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% block head %}
   {% endblock %}
 </head>
@@ -18,13 +19,14 @@
     <div class="header-logo-container">
       <a href="/">
         <img 
-          src="{% 'images/clutch up logo.jpeg' " 
+          src="images/clutch up logo.jpeg" 
           alt="Clutch Up Logo"
         >
       </a>
     </div>
     <nav>
       <ul>
+        <li><a href="/cats">Past Rides</a></li>
         <li><a href="/about">About</a></li>
       </ul>
     </nav>

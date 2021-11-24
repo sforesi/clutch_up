@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/trip-index.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1>trip List</h1>
+  <img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" />
+  <img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
+  <img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
+</section>
+
+<section class="card-container">
+  {% for trip in trips %}
+    <div class="card">
+      <div class="card-content">
+        <div class="card-img-container">
+          <img 
+            src="{% static 'images/sk8r-boi-trip.svg' %}" 
+            alt="A skater boy trip"
+          >
+        </div>
+        <h2 class="card-title">{{ trip.name }}</h2>
+        {% if trip.age > 0 %}
+          <p>A {{ trip.age }} year old {{ trip.breed }}</p>
+        {% else %}
+          <p>A {{ trip.breed }} kitten.</p>
+        {% endif %}
+        <p><small>{{ trip.description }}</small></p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
