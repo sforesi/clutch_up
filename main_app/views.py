@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.edit import CreateView
 from .models import Trip
+# Add UdpateView & DeleteView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 # VIEW DEFINITIONS
 def home(request):
@@ -26,4 +28,13 @@ def trips_detail(request, trip_id):
 class TripCreate(CreateView):
   model = Trip
   fields = '__all__'
+  success_url = '/trips/'
+
+class TripUpdate(UpdateView):
+  model = Trip
+  # Let's disallow the renaming of a Trip by excluding the name field!
+  fields = ['name', 'type', 'distance', 'description', 'topspeed']
+
+class TripDelete(DeleteView):
+  model = Trip
   success_url = '/trips/'

@@ -24,6 +24,10 @@
       <h2>This trip was {{ trip.distance }} km</h2>
       <h2>The top speed was {{ trip.topspeed }} kmph.</h2>
     <p>{{ trip.description }}</p>
+    <div class="trip-actions">
+      <a href="{% url 'trips_update' trip.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'trips_delete' trip.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 
