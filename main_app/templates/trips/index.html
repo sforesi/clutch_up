@@ -17,10 +17,11 @@
 <section class="card-container">
   {% for trip in trips %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-        {% comment %} for each statement for choices {% endcomment %}
-        </div>
+      <a href="/trips/{{ trip.id }}">
+        <div class="card-content">
+          <div class="card-img-container">
+          {% comment %} for each statement for choices {% endcomment %}
+          </div>
         <h2 class="card-title">{{ trip.name }}</h2>
         {% if trip.distance > 0 %}
           <p>TRIP DISTANCE: {{ trip.distance }} km  {{ trip.breed }}</p>
