@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/trip-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="trip-container">
+  <div class="trip-img">
+    <img 
+      src="{% static 'images/rider-wheelie-icon.png' %}" 
+      alt="Rider Doing Wheelie"
+    >
+  </div>
+  <div class="trip-details">
+    <h1>{{ trip.name }}</h1>
+      <h2>This trip was {{ trip.distance }} km</h2>
+      <h2>The top speed was {{ trip.topspeed }} kmph.</h2>
+    <p>{{ trip.description }}</p>
+  </div>
+</section>
+
+{% endblock %}
