@@ -26,3 +26,4 @@ def trips_detail(request, trip_id):
 class TripCreate(CreateView):
   model = Trip
   fields = '__all__'
+  success_url = '/trips/'

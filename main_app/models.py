@@ -10,5 +10,9 @@ class Trip(models.Model):
   distance = models.IntegerField()
   description = models.TextField(max_length=500)
   topspeed = models.IntegerField()
+  
   def __str__(self):
     return self.name
+  
+  def get_absolute_url(self):
+    return reverse('trips_detail', kwargs={'trip_id': self.id})
