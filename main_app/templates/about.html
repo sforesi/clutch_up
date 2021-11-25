@@ -1,4 +1,11 @@
+{% extends 'base.html' %}
 {% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+{% endblock %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,3 +24,5 @@
     <img src="{% static 'images/rider-icon-1.png' %}" alt="Rider Icon Red" />
 </body>
 </html>
+
+{% endblock %}
