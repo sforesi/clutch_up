@@ -1,7 +1,7 @@
 from typing import Type
 from django.db import models
 
-TYPE = (('s', 'Street'),('r', 'Road'),('t', 'Track'))
+TYPE = (('s', 'Street'),('o', 'Offroad'),('t', 'Track'))
 
 # Create your models here.
 class Trip(models.Model): 
