@@ -17,7 +17,7 @@
 <section class="card-container">
   {% for trip in trips %}
     <div class="card">
-      <a href="/trips/{{ trip.id }}">
+      <a href="{% url 'trips_details' trip.id %}">
         <div class="card-content">
           <div class="card-img-container">
           {% comment %} for each statement for choices {% endcomment %}
