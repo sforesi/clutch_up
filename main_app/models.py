@@ -1,5 +1,6 @@
 from typing import Type
 from django.db import models
+from django.urls import reverse
 
 TYPE = (('Street', 'Street'),('Offroad', 'Offroad'),('Track', 'Track'))
 
