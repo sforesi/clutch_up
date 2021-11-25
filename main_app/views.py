@@ -22,3 +22,7 @@ def home(request):
 def trips_detail(request, trip_id):
   trip = Trip.objects.get(id=trip_id)
   return render(request, 'trips/detail.html', { 'trip': trip })
+
+class TripCreate(CreateView):
+  model = Trip
+  fields = '__all__'
