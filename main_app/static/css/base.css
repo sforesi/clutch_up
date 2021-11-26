@@ -52,6 +52,11 @@ header {
   border-bottom: var(--borders);
 }
 
+.nav-logo{
+  height: 50px;
+  margin-left:20px;
+}
+
 nav {
   margin: 10px;
 }
@@ -231,6 +236,10 @@ nav li {
     border-bottom: none;
   }
 
+  .nav-logo{
+    height: 100%;
+  }
+  
   nav,
   .header-logo-container {
     margin: 0;
