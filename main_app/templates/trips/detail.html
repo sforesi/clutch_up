@@ -25,7 +25,7 @@
     <h1> {{ trip.name }} </h1>
       <h3>TRIP TYPE: {{ trip.type }}</h3>
       <p>{{ trip.description }}</p>
-      <p>This trip was {{ trip.distance }} km</p>
+      <p>TRIP DISTANCE: {{ trip.distance }} km</p>
       <p> TOP SPEED:  {{ trip.topspeed }} kmph.</p>
     <div class="trip-actions">
       <a href="{% url 'trips_update' trip.id %}" class="btn warn">Edit</a>
