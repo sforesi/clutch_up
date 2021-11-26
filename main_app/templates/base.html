@@ -26,10 +26,10 @@
         <li><a href="{% url 'trips_index' %}">PAST RIDES</a></li>
         <li><a href="{% url 'trips_create' %}">ADD A TRIP</a></li>
         <li><a href="{% url 'about' %}">ABOUT</a></li>
-        <li><a href="{% url 'logout' %}">Log out</a></li>
+        <li><a href="{% url 'logout' %}">LOG OUT</a></li>
           {% else %}
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'home' %}">Login</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'home' %}">LOGIN</a></li>
           {% endif %}
       </ul>
     </nav>
