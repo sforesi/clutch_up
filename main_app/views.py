@@ -28,7 +28,9 @@ def trips_detail(request, trip_id):
 class TripCreate(CreateView):
   model = Trip
   fields = ['name', 'type', 'distance', 'description', 'topspeed']
-
+  def form_valid(self, form):
+    form.instance.user = self.request.user  
+    return super().form_valid(form)
   success_url = '/trips/'
 
 class TripUpdate(UpdateView):
