@@ -1,8 +1,7 @@
 # IMPORTS
 from django.urls import path
 from . import views
-from django.contrib.auth import login
-from django.contrib.auth.forms import UserCreationForm
+
 
 
 urlpatterns = [
