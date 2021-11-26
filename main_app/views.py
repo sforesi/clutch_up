@@ -1,14 +1,14 @@
 # IMPORTS
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views.generic.edit import CreateView
 from .models import Trip
 # Add UdpateView & DeleteView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.views import LoginView
 
 # VIEW DEFINITIONS
-def home(request):
-  return HttpResponse('<h1>Hello Rider!</h1>')
+class Home(LoginView):
+  template_name = 'home.html'
 
 def about(request):
   return render(request, 'about.html')
@@ -27,7 +27,8 @@ def trips_detail(request, trip_id):
 
 class TripCreate(CreateView):
   model = Trip
-  fields = '__all__'
+  fields = ['name', 'type', 'distance', 'description', 'topspeed']
+
   success_url = '/trips/'
 
 class TripUpdate(UpdateView):
