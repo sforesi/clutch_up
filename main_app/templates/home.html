@@ -7,11 +7,21 @@
 
 {% block content %}
 
-<h1>Clutch Up!</h1>
+
 <section class="logo-container">
   <div class="trip-container">
     <img src="{% static 'images/clutch-up-logo.png' %}" alt="Clutch-Up Logo" />
   </div>
+</section>
+<section>
+<h1>Clutch Up!</h1>
+  <form action="{% url 'home' %}" method="post" class="login">
+    <h1>Login</h1>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name="next" value="{{ next }}">
+    <button type="submit" class="btn submit">Login</button>
+  </form>
 </section>
 
 {% endblock %}
