@@ -7,6 +7,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
 
 # VIEW DEFINITIONS
 class Home(LoginView):
@@ -16,6 +17,7 @@ def about(request):
   return render(request, 'about.html')
 
 # Add new view
+@login_required
 def trips_index(request):
   trips = Trip.objects.filter(user=request.user)
   return render(request, 'trips/index.html', { 'trips': trips })
@@ -23,6 +25,7 @@ def trips_index(request):
 def home(request):
   return render(request, 'home.html')
 
+@login_required
 def trips_detail(request, trip_id):
   trip = Trip.objects.get(id=trip_id)
   return render(request, 'trips/detail.html', { 'trip': trip })
