@@ -22,9 +22,15 @@
     </div>
     <nav>
       <ul>
+      {% if user.is_authenticated %}
         <li><a href="{% url 'trips_index' %}">PAST RIDES</a></li>
         <li><a href="{% url 'trips_create' %}">ADD A TRIP</a></li>
         <li><a href="{% url 'about' %}">ABOUT</a></li>
+        <li><a href="{% url 'logout' %}">Log out</a></li>
+          {% else %}
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'home' %}">Login</a></li>
+          {% endif %}
       </ul>
     </nav>
   </header>
