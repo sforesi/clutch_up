@@ -238,6 +238,9 @@ nav li {
 
   .nav-logo{
     height: 100%;
+    width: auto;
+    padding: 0px; 
+    margin: auto;
   }
   
   nav,
