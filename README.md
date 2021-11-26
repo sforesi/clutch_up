@@ -49,11 +49,13 @@ AAU I want to be able to add bike specs and set up to trips, so that I can remem
 
 ### **Techonologies Used**
 
--HTML 
--CSS 
--JS
--PYTHON
--POSTGRESQL
+- PYTHON
+- POSTGRESQL
+- DJANGO
+- HTML 
+- CSS 
+- JS
+
 
 ### **Credits & Sources** 
 
