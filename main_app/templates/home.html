@@ -13,6 +13,7 @@
     <img src="{% static 'images/clutch-up-logo.png' %}" alt="Clutch-Up Logo" />
   </div>
 </section>
+{% if not user.is_authenticated %}
 <section>
 <h1>Clutch Up!</h1>
   <form action="{% url 'home' %}" method="post" class="login">
@@ -23,5 +24,6 @@
     <button type="submit" class="btn submit">Login</button>
   </form>
 </section>
+{% endif %}
 
 {% endblock %}
