@@ -22,11 +22,11 @@
           {% endif %}
   </div>
   <div class="trip-details">
-    <h1>{{ trip.name }}</h1>
-      <h3>{{ trip.type }}</h3>
-      <h2>This trip was {{ trip.distance }} km</h2>
-      <h2>The top speed was {{ trip.topspeed }} kmph.</h2>
-    <p>{{ trip.description }}</p>
+    <h1> {{ trip.name }} </h1>
+      <h3>TRIP TYPE: {{ trip.type }}</h3>
+      <p>{{ trip.description }}</p>
+      <p>This trip was {{ trip.distance }} km</p>
+      <p> TOP SPEED:  {{ trip.topspeed }} kmph.</p>
     <div class="trip-actions">
       <a href="{% url 'trips_update' trip.id %}" class="btn warn">Edit</a>
       <a href="{% url 'trips_delete' trip.id %}" class="btn danger">Delete</a>
