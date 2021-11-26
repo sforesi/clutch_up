@@ -20,7 +20,13 @@
       <a href="{% url 'trips_detail' trip.id %}">
         <div class="card-content">
           <div class="card-img-container">
-          {% comment %} for each statement for choices {% endcomment %}
+          {% if trip.type == 'Street'%}
+            <img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" /> 
+          {% elif trip.type == 'Offroad' %}
+            <img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
+          {% else %}
+            <img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
+          {% endif %}
           </div>
           <h2 class="card-title">{{ trip.name }}</h2>
             <p>TRIP TYPE: {{ trip.type }} </p>
