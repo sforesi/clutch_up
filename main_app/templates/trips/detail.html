@@ -13,10 +13,13 @@
 
 <section class="trip-container">
   <div class="trip-img">
-    <img class="user-img" 
-      src="{% static 'images/rider-wheelie-icon.png' %}" 
-      alt="Rider Doing Wheelie"
-    >
+  {% if trip.type == 'Street'%}
+            <img class=usr-img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" /> 
+          {% elif trip.type == 'Offroad' %}
+            <img class=usr-img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
+          {% else %}
+            <img class=usr-img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
+          {% endif %}
   </div>
   <div class="trip-details">
     <h1>{{ trip.name }}</h1>

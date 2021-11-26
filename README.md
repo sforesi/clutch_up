@@ -12,7 +12,7 @@ This is a motorcycle trip tracking app.
 
 ### **Application Description & Overview** 
 
-There are few joys in life that compare to the thrill of riding a motorcycle, there are even fewer hobbyist that are more obsessed than motorcycle riders. In fact, for just about every possible type of motorcycle product you could think of, there's probably something for it. 
+There are few joys in life that compare to the thrill of riding a motorcycle, there are even fewer hobbyist that are more obsessed than motorcycle riders. In fact, for just about every possible type of motorcycle product you could imagine, there's probably something for it. 
 
 As a rider myself, amongst all these different products, I haven't found an app that allows you to meaningfully track your rides in something of a 'diary' format. This app is meant to fill that gap. Allowing you to track your rides by adding details like a description, distance and top speed.
 
