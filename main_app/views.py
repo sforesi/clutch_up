@@ -8,6 +8,7 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # VIEW DEFINITIONS
 class Home(LoginView):
@@ -49,7 +50,7 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'signup.html', context)
 
-class TripCreate(CreateView):
+class TripCreate(LoginRequiredMixin, CreateView):
   model = Trip
   fields = ['name', 'type', 'distance', 'description', 'topspeed']
   def form_valid(self, form):
@@ -57,11 +58,11 @@ class TripCreate(CreateView):
     return super().form_valid(form)
   success_url = '/trips/'
 
-class TripUpdate(UpdateView):
+class TripUpdate(LoginRequiredMixin, UpdateView):
   model = Trip
   # Let's disallow the renaming of a Trip by excluding the name field!
   fields = ['name', 'type', 'distance', 'description', 'topspeed']
 
-class TripDelete(DeleteView):
+class TripDelete(LoginRequiredMixin, DeleteView):
   model = Trip
   success_url = '/trips/'
