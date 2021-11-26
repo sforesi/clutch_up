@@ -21,9 +21,9 @@
         <div class="card-content">
           <div class="card-img-container">
           {% if trip.type == 'Street'%}
-            <img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" /> 
+            <img class=usr-img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" /> 
           {% elif trip.type == 'Offroad' %}
-            <img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
+            <img  src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
           {% else %}
             <img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
           {% endif %}
