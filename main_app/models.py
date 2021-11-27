@@ -4,6 +4,7 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
 
+
 TYPE = (('Street', 'Street'),('Offroad', 'Offroad'),('Track', 'Track'))
 
 # Create your models here.
@@ -22,6 +23,8 @@ class Trip(models.Model):
   
   def get_absolute_url(self):
     return reverse('trips_detail', kwargs={'trip_id': self.id})
+
+
   
   # def __str__(self):
   #   return self.date

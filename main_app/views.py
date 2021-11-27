@@ -63,6 +63,8 @@ class TripUpdate(LoginRequiredMixin, UpdateView):
   # Let's disallow the renaming of a Trip by excluding the name field!
   fields = ['name', 'type', 'distance', 'description', 'topspeed']
 
-class TripDelete(LoginRequiredMixin, DeleteView):
+class TripDelete(LoginRequiredMixin, UpdateView):
   model = Trip
   success_url = '/trips/'
+
+
