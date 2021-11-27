@@ -37,6 +37,20 @@
       <a href="{% url 'trips_update' trip.id %}" class="btn warn">Edit</a>
       <a href="{% url 'trips_delete' trip.id %}" class="btn danger">Delete</a>
     </div>
+      <h3>Change {{ trip.name }}'s photo</h3>
+    <p id="file-name"></p>
+    <form 
+      action="{% url 'add_photo' trip.id %}"
+      enctype="multipart/form-data"
+      method="POST"
+    >
+      {% csrf_token %}
+      <label class="btn secondary">
+        Choose photo
+        <input type="file" name="photo-file" id="file-input">
+      </label>
+      <button type="submit" class="btn submit">Upload Photo</button>
+    </form>
   </div>
 </section>
 
