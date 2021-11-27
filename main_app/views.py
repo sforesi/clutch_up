@@ -1,7 +1,7 @@
 # IMPORTS
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import Trip
+from .models import Trip, Photo
 # Add UdpateView & DeleteView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
@@ -9,6 +9,8 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+import uuid
+import boto3
 
 # VIEW DEFINITIONS
 class Home(LoginView):
