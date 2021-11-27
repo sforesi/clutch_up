@@ -10,17 +10,23 @@
 {% endblock %}
 
 {% block content %}
-
 <section class="trip-container">
   <div class="trip-img">
-  {% if trip.type == 'Street'%}
-            <img class=usr-img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" /> 
-          {% elif trip.type == 'Offroad' %}
-            <img class=usr-img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
-          {% else %}
-            <img class=usr-img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
-          {% endif %}
+    {% if trip.photo.url %}
+      <img 
+        src="{{trip.photo.url}}" 
+        alt="A photo of {{trip.name}}"
+        class="usr-img"
+      >
+    {% else %}
+      <img 
+        src="{% static 'images/track-icon.png' %}" 
+        alt="Track Icon"
+      >
+    {% endif %}
   </div>
+
+
   <div class="trip-details">
     <h1> {{ trip.name }} </h1>
       <h3>TRIP TYPE: {{ trip.type }}</h3>

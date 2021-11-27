@@ -12,6 +12,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 import uuid
 import boto3
 
+# Add these "constant" variables below the imports
+S3_BASE_URL = 'Your endpoint from above'
+BUCKET = '<your-bucket-name-here>'
+
 # VIEW DEFINITIONS
 class Home(LoginView):
   template_name = 'home.html'
@@ -69,4 +73,21 @@ class TripDelete(LoginRequiredMixin, UpdateView):
   model = Trip
   success_url = '/trips/'
 
+
+def add_photo(request, trip_id):
+  photo_file = request.FILES.get('photo-file', None)
+  if photo_file:
+    s3 = boto3.client('s3')
+    key = uuid.uuid4().hex + photo_file.name[photo_file.name.rfind('.'):]
+    try:
+      s3.upload_fileobj(photo_file, BUCKET, key)
+      url = f"{S3_BASE_URL}{BUCKET}/{key}"
+      photo = Photo(url=url, trip_id=trip_id)
+      trip_photo = Photo.objects.filter(trip_id=trip_id)
+      if trip_photo.first():
+        trip_photo.first().delete()
+      photo.save()
+    except Exception as err:
+      print('An error occurred uploading file to S3: %s' % err)
+  return redirect('trips_detail', trip_id=trip_id)
 
