@@ -11,10 +11,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 import uuid
 import boto3
-
-# Add these "constant" variables below the imports
-S3_BASE_URL = 'Your endpoint from above'
-BUCKET = '<your-bucket-name-here>'
+S3_BASE_URL = 'https://s3.us-east-1.amazonaws.com/'
+BUCKET = 'clutch-up-app'
 
 # VIEW DEFINITIONS
 class Home(LoginView):
