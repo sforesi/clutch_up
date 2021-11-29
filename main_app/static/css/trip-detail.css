@@ -10,6 +10,11 @@
   width: 75%;
   max-width: 350px;
 }
+
+.usr-img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
 /* 
 .usr-img {
   width: 100%;
