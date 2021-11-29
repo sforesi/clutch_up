@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.page-header {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
 table {
   padding: 0 40px;
   width: 100%;
