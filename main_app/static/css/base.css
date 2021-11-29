@@ -52,7 +52,7 @@ header {
 .nav-logo{
   height: 50px;
   width: 50px;
-
+  flex-grow: 100;
 }
 
 nav {
