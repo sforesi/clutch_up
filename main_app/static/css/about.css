@@ -52,6 +52,10 @@ header {
   border-bottom: var(--borders);
 }
 
+img {
+  width: 275px;
+}
+
 nav {
   margin: 10px;
 }
