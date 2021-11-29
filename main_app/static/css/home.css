@@ -63,6 +63,10 @@ main > section {
   margin-top: 16px;
 }
 
+img {
+  width: 275px;
+}
+
 @media only screen and (min-width: 768px) {
   main {
     justify-content: space-around;
@@ -83,4 +87,5 @@ main > section {
   .logo-container {
     max-width: 520px;
   }
+  
 }
