@@ -73,6 +73,7 @@ main {
 
 h2 {
   font-size: var(--font-xl);
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 nav a {

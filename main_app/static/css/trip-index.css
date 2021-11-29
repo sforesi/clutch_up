@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
 }
 
 .card {
