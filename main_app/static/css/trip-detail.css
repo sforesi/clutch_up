@@ -15,19 +15,34 @@
   width: 100%;
   border-radius: var(--card-border-radius);
 }
-/* 
-.usr-img {
-  width: 100%;
-  border-radius: var(--card-border-radius);
-}
 
 .trip-details {
   width: 98%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .trip-actions {
   margin-top: 20px;
 }
+
+.trip-details h2 {
+  font-size: var(--font-xl);
+  margin: 0 0 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.trip-details h3 {
+  margin: 20px 0 10px;
+  font-size: var(--font-l);
+}
+
+.trip-details p {
+  font-size: var(--font-reg);
+  margin: 5px 0;
+}
+/* 
+
 
 .feedings-toy-container {
   display: flex;
