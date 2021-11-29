@@ -25,8 +25,6 @@
   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
   {% if user.is_authenticated %}
-
-     
         <li class="nav-item active">
         <a class="nav-link" href="{% url 'trips_index' %}"> PAST RIDES <span class="sr-only">(current)</span></a>
       </li>
@@ -62,31 +60,6 @@
   </div>
 </nav>
 </header>
-{% comment %} 
-  <header>
-    <div class="header-logo-container">
-      <a href="{% url 'home' %}">
-        <img class="nav-logo" 
-          src="{% static 'images/clutch-up-logo.png' %}" 
-          alt="The Clutch Up Logo"
-        >CLUTCH UP
-      </a>
-    </div>
-    <nav>
-      <ul>
-      {% if user.is_authenticated %}
-        <li><a href="{% url 'trips_index' %}">PAST RIDES</a></li>
-        <li><a href="{% url 'trips_create' %}">ADD A TRIP</a></li>
-        <li><a href="{% url 'about' %}">ABOUT</a></li>
-        <li><a href="{% url 'logout' %}">LOG OUT</a></li>
-          {% else %}
-            <li><a href="{% url 'about' %}">ABOUT</a></li>
-            <li><a href="{% url 'home' %}">LOGIN</a></li>
-            <li><a href="{% url 'signup' %}">SIGN UP</a></li>
-          {% endif %}
-      </ul>
-    </nav>
-  </header> {% endcomment %}
   <main>
     {% block content %}
     {% endblock %}

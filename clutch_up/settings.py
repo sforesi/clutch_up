@@ -22,10 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!iyd1h3!dwk%#=hki!&8fxi36wjk-o(2jhegc60=2f-izlxk6#'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG') == 'True' 
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = []
 
@@ -133,3 +134,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Add this variable to specify where logging out redirects to
 LOGOUT_REDIRECT_URL = 'home'
+
+import django_heroku
+django_heroku.settings(locals())
