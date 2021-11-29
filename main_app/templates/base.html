@@ -23,16 +23,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">    
   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a href="{% url 'home' %}">
-        <img class="nav-logo" 
-          src="{% static 'images/clutch-up-logo.png' %}" 
-          alt="The Clutch Up Logo"
-        >
-      </a>
+
   {% if user.is_authenticated %}
 
-      </li>
+     
         <li class="nav-item active">
         <a class="nav-link" href="{% url 'trips_index' %}"> PAST RIDES <span class="sr-only">(current)</span></a>
       </li>
@@ -47,13 +41,24 @@
         <li class="nav-item active">
         <a class="nav-link" href="{% url 'logout' %}">LOG OUT <span class="sr-only">(current)</span></a>
       </li>
+      <a class="nav-logo" href="{% url 'home' %}">
+        <img class="nav-logo" 
+          src="{% static 'images/clutch-up-logo.png' %}" 
+          alt="The Clutch Up Logo"
+        >
+      </a> 
     </ul>
   {% else %}
     <li><a href="{% url 'about' %}">ABOUT</a></li>
-      <li><a href="{% url 'home' %}">LOGIN</a></li>
-      <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+    <li><a href="{% url 'home' %}">LOGIN</a></li>
+    <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+        <a class="nav-logo" href="{% url 'home' %}">
+        <img class="nav-logo" 
+          src="{% static 'images/clutch-up-logo.png' %}" 
+          alt="The Clutch Up Logo"
+        >
+      </a> 
   {% endif %}
-
   </div>
 </nav>
 </header>

@@ -3,6 +3,8 @@ from typing import Type
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
+# from datetime import date
+
 
 
 TYPE = (('Street', 'Street'),('Offroad', 'Offroad'),('Track', 'Track'))
@@ -23,6 +25,8 @@ class Trip(models.Model):
   
   def get_absolute_url(self):
     return reverse('trips_detail', kwargs={'trip_id': self.id})
+  # def __str__(self):
+    return self.date
 
 class Photo(models.Model):
   url = models.CharField(max_length=250)
@@ -31,5 +35,3 @@ class Photo(models.Model):
   def __str__(self):
     return f"Photo for trip_id: {self.trip_id} @{self.url}"
   
-  # def __str__(self):
-  #   return self.date
