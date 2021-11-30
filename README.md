@@ -19,7 +19,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 ### **Screenshots**
 
 ![Homepage](main_app/static/images/home-page-screenshot.jpg)
-![Sign Up](/Users/sebastianoforesi/code/sei/projects/clutch_up/main_app/static/images/sign-up-screenshot.jpeg)
+![Sign Up](main_app/static/images/sign-up-screenshot.jpeg)
 ![Add Trip](/Users/sebastianoforesi/code/sei/projects/clutch_up/main_app/static/images/add-ride-screenshot.png)
 ![Trips Index](/Users/sebastianoforesi/code/sei/projects/clutch_up/main_app/static/images/past-trips-screenshot.png)
 ![About Page]()
