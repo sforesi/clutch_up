@@ -50,15 +50,15 @@
       
     </ul>
   {% else %}
-    <li><a href="{% url 'about' %}">ABOUT</a></li>
-    <li><a href="{% url 'home' %}">LOGIN</a></li>
-    <li><a href="{% url 'signup' %}">SIGN UP</a></li>
-        <a class="nav-logo" href="{% url 'home' %}">
+  <a class="nav-logo" href="{% url 'home' %}">
         <img class="nav-logo" 
           src="{% static 'images/clutch-up-logo.png' %}" 
           alt="The Clutch Up Logo"
         >
       </a> 
+    <li><a href="{% url 'about' %}">ABOUT</a></li>
+    <li><a href="{% url 'home' %}">LOGIN</a></li>
+    <li><a href="{% url 'signup' %}">SIGN UP</a></li>
   {% endif %}
   </div>
 </nav>
