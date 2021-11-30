@@ -20,10 +20,13 @@
 
       >
     {% else %}
-      <img 
-        src="{% static 'images/track-icon.png' %}" 
-        alt="Track Icon"
-      >
+      {% if trip.type == 'Street'%}
+        <img class=usr-img src="{% static 'images/street-icon.png' %}" alt="Street Riding Icon" /> 
+      {% elif trip.type == 'Offroad' %}
+        <img class=usr-img src="{% static 'images/offroad-icon.png' %}" alt="Offroad Riding Icon" />
+      {% else %}
+        <img class=usr-img src="{% static 'images/track-icon.png' %}" alt="Track Riding Icon" />
+      {% endif %}
     {% endif %}
   </div>
 
