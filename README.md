@@ -20,8 +20,8 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 ![Homepage](main_app/static/images/home-page-screenshot.jpg)
 ![Sign Up](main_app/static/images/sign-up-screenshot.jpeg)
-![Add Trip](main_app/static/images/add-ride-screenshot.png)
 ![Trips Index](main_app/static/images/past-trips-screenshot.png)
+![Add Trip](main_app/static/images/add-ride-screenshot.png)
 ![About Page]()
 
 
