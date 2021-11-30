@@ -18,6 +18,8 @@ class Trip(models.Model):
   description = models.TextField(max_length=500)
   topspeed = models.IntegerField()
   user = models.ForeignKey(User, on_delete=models.CASCADE)
+  class Meta:
+    ordering = ['type']
   
   
   def __str__(self):
