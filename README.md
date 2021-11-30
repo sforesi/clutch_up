@@ -19,9 +19,11 @@ As a rider myself, amongst all these different products, I haven't found an app 
 ### **Screenshots**
 
 ![Homepage](main_app/static/images/home-page-screenshot.jpg)
-![About Page]()
+![Sign Up](/Users/sebastianoforesi/code/sei/projects/clutch_up/main_app/static/images/sign-up-screenshot.png)
 ![Add Trip](/Users/sebastianoforesi/code/sei/projects/clutch_up/main_app/static/images/add-ride-screenshot.png)
-![Trips Index]()
+![Trips Index](/Users/sebastianoforesi/code/sei/projects/clutch_up/main_app/static/images/past-trips-screenshot.png)
+![About Page]()
+
 
 ### **Ice-Box Goals & Improvements to Come** 
 
