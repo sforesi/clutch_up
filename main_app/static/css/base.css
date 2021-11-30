@@ -47,6 +47,8 @@ header {
   width: 100%;
   background: var(--nav-bg-ff);
   border-bottom: var(--borders);
+  position: absolute;
+  z-index: 1;
 }
 
 .nav-logo{
