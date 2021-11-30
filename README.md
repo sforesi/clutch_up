@@ -20,7 +20,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 ![Homepage](main_app/static/images/home-page-screenshot.jpg)
 ![About Page]()
-![Add Trip]()
+![Add Trip](/Users/sebastianoforesi/code/sei/projects/clutch_up/main_app/static/images/add-ride-screenshot.png)
 ![Trips Index]()
 
 ### **Ice-Box Goals & Improvements to Come** 
