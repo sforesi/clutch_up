@@ -18,7 +18,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 ### **Screenshots**
 
-![Homepage]()
+![Homepage](main_app/static/images/home-page-screenshot.jpg)
 ![About Page]()
 ![Add Trip]()
 ![Trips Index]()
