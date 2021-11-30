@@ -27,7 +27,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 
 ### **Ice-Box Goals & Next Steps** 
-- [ AAU I want to be able to toggle light and dark mode. ]
+- AAU I want to be able to toggle light and dark mode.[ ]
 - [ AAU I want to be able to add "My Motorcyle" by linking an API, so that I can feel like I'm in my "virtual garage" when I login to the homepage. ]
 - [ AAU I want to be able to add "My Tyres", if possible also by linking an API, so that I can track tyre degredation and performance. ]
 - [ AAU I want to be able to add a Google location to my trip, so that i can see exactly where I've ridden. ]
