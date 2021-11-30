@@ -85,6 +85,10 @@ h2 {
   font-size: var(--font-xl);
 }
 
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
 nav a {
   text-decoration: none;
   color: var(--text-color);
