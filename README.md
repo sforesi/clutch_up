@@ -18,7 +18,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 ### **Screenshots**
 
-![Homepage](main_app/static/images/home-page-screenshot.jpg)
+![Homepage](main_app/static/images/home-page-screenshot.jpeg)
 ![Sign Up](main_app/static/images/sign-up-screenshot.jpeg)
 ![Trips Index](main_app/static/images/past-trips-screenshot.png)
 ![Trips Detail](main_app/static/images/past-trips-screenshot.png)
