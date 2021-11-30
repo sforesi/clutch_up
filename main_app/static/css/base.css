@@ -105,6 +105,7 @@ nav li {
 .navbar-nav {
   display: flex;
   flex-direction: column;
+
 }
 
 .navbar-nav > div {
@@ -259,6 +260,8 @@ nav li {
 
   .navbar-nav {
     display: flex !important;
+    justify-content: flex-end !important;
+
   }
   
   .navbar-nav > div {
@@ -284,6 +287,10 @@ nav li {
     padding-top: 6px;
     width: 256px;
     height: 35px;
+  }
+
+  .collapse {
+    display: none !important;
   }
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
