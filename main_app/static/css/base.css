@@ -60,6 +60,8 @@ header {
 nav {
   margin: 10px;
   font-family: 'Quicksand', sans-serif;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 
 ul {
@@ -70,6 +72,7 @@ ul {
 
 main {
   width: 100%;
+  margin-top: 50px;
 }
 
 h2 {
@@ -99,6 +102,16 @@ nav li {
   padding: 5px 8px;
 }
 
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-nav > div {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-logo-container {
   margin: auto;
   padding: 10px 20px 0;
@@ -123,6 +136,7 @@ nav li {
   cursor: pointer;
   font-family: inherit;
   margin-right: 10px;
+  
 }
 
 .btn:hover {
@@ -175,6 +189,7 @@ nav li {
   main {
     max-width: 1300px;
     min-height: calc(100vh - 53px);
+    margin-top: 0;
   }
 
   nav,
@@ -240,9 +255,17 @@ nav li {
 
   .nav-logo{
     height: 50px;
-    display: block;
+  }
+
+  .navbar-nav {
+    display: flex !important;
   }
   
+  .navbar-nav > div {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 100%; */
+  }
 
   nav,
   .header-logo-container {
@@ -252,9 +275,9 @@ nav li {
     border-radius: 18px;
   }
 
-  nav {
+  /* nav {
     margin-left: auto;
-  }
+  } */
 
   .header-logo-container {
     /* visual fix to help align logo */
@@ -276,4 +299,5 @@ nav li {
       backdrop-filter: blur(3px);
     }
   }
+
 }

@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{% static 'images/clutch-up-logo.png' %}" type="image/png">
   <title>Clutch Up</title>
   <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,29 +26,30 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">    
-  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <ul class="navbar-nav mt-2 mt-lg-0">
 
   {% if user.is_authenticated %}
     <a class="nav-logo" href="{% url 'home' %}">
     <img class="nav-logo" 
       src="{% static 'images/clutch-up-logo.png' %}" 
       alt="The Clutch Up Logo"
-    ></a>    
-        <li class="nav-item active">
+    ></a>   
+    <div>
+      <li class="nav-item active">
         <a class="nav-link" href="{% url 'trips_index' %}"> PAST RIDES <span class="sr-only">(current)</span></a>
       </li>
         <li class="nav-item active">
         <a class="nav-link" href="{% url 'trips_create' %}">ADD A RIDE <span class="sr-only">(current)</span></a>
       </li>
-        </li>
         <li class="nav-item active">
         <a class="nav-link" href="{% url 'about' %}"> ABOUT <span class="sr-only">(current)</span></a>
       </li>
         </li>
         <li class="nav-item active">
         <a class="nav-link" href="{% url 'logout' %}">LOG OUT <span class="sr-only">(current)</span></a>
-      </li>
-      
+      </li>  
+    </div> 
+        
     </ul>
   {% else %}
   <a class="nav-logo" href="{% url 'home' %}">
@@ -56,9 +58,11 @@
           alt="The Clutch Up Logo"
         >
       </a> 
-    <li><a href="{% url 'about' %}">ABOUT</a></li>
-    <li><a href="{% url 'home' %}">LOGIN</a></li>
-    <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+    <div>
+      <li><a href="{% url 'about' %}">ABOUT</a></li>
+      <li><a href="{% url 'home' %}">LOGIN</a></li>
+      <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+    </div>
   {% endif %}
   </div>
 </nav>
