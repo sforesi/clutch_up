@@ -35,6 +35,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 - [ AAU I want to be able to comment/save other user's trips, so that I can leave my thoughts on that ride or go on that ride myself in the future. ]
 - [ AAU I want to be able to sort my trips by category, so that I can view my ROAD, OFF ROAD, TRACK trips organized by type. ]
 - [ AAU I want to be able to add bike specs and set up to trips, so that I can remember how the bike performed under different circumstances such as varying PSI, fairings, suspension, slip-ons, turbos etc... ]
+- [ ]
 
 ### **Wirefaming**
 
