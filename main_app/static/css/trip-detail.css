@@ -19,6 +19,10 @@
 .trip-details {
   width: 98%;
   font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .trip-actions {

@@ -64,8 +64,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 ### **Credits & Sources** 
 
-#### Images and Icons
 
-  []()
+- [Icons](https://www.flaticon.com/)
   
 
