@@ -18,12 +18,12 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 ### **Screenshots**
 
-![Homepage](main_app/static/images/SCREENSHOTS/home-page-screenshot.png)
-![Sign Up](main_app/static/images/SCREENSHOTS/sign-up-screenshot.png)
-![Trips Index](main_app/static/images/SCREENSHOTS/trips-index-screenshot.png)
-![Trips Detail](main_app/static/images/SCREENSHOTS/trip-details-screenshot.png)
-![Add Trip](main_app/static/images/SCREENSHOTS/add-ride-screenshot.png)
-![About Page](main_app/static/images/SCREENSHOTS/about-page-screenshot.png)
+![Homepage](main_app/static/images/home-page-screenshot.png)
+![Sign Up](main_app/static/images/sign-up-screenshot.png)
+![Trips Index](main_app/static/images/trips-index-screenshot.png)
+![Trips Detail](main_app/static/images/trip-detail-screenshot.png)
+![Add Trip](main_app/static/images/add-ride-screenshot.png)
+![About Page](main_app/static/images/about-page-screenshot.png)
 
 
 ### **Ice-Box Goals & Next Steps** 
