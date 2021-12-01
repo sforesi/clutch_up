@@ -1,4 +1,4 @@
-# Clutch Up
+# ClutchUp
 
 
 ## **Getting Started**
