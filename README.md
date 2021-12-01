@@ -28,7 +28,7 @@ As a rider myself, amongst all these different products, I haven't found an app 
 
 ### **Ice-Box Goals & Next Steps** 
 
-- [ X ] AAU I want to be able to sort my trips by category, so that I can view my ROAD, OFF ROAD, TRACK trips organized by type.
+- [X] AAU I want to be able to sort my trips by category, so that I can view my ROAD, OFF ROAD, TRACK trips organized by type.
 - [ ] AAU I want to be able to toggle light and dark mode.
 - [ ] AAU I want to be able to add "My Motorcyle" by linking an API, so that I can feel like I'm in my "virtual garage" when I login to the homepage.
 - [ ] AAU I want to be able to add "My Tyres", if possible also by linking an API, so that I can track tyre degredation and performance.
